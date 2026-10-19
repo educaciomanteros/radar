@@ -1,7 +1,7 @@
 # Top Manta · Radars
 
-Codi i documentació dels radars de Top Manta.
+[Obre el radar privat d’ajuts](https://top-manta-radar-ajuts-m8q2.stollenart.chatgpt.site)
 
-El radar econòmic es conserva a `ajuts/`. Els radars es publiquen amb Sites amb accés privat; GitHub conserva el codi per a revisió i continuïtat.
+Codi i anàlisi inicial de 32 línies de finançament a `ajuts/`. Actualització parcial del plugin a `plugin-update/`. Revisió documental 19/10/2026; elegibilitat condicionada i sense garantia d’exhaustivitat.
 
-No incloure dades personals, credencials ni còpies del seguiment del navegador.
+Publicació amb Sites. GitHub conserva el codi i no activa desplegaments automàtics. Les notes i el seguiment queden al navegador i no s’inclouen en aquest repositori.

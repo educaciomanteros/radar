@@ -1,0 +1,28 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "gpt-f024caae52569144119509bd9caf390b",
+  "version": "0.8.2",
+  "description": "Instructions for Comunicacio Educació Mantera.",
+  "author": {
+    "name": "GPT Creator"
+  },
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "capabilities": [
+          "skills"
+        ],
+        "category": "Education & Research",
+        "composerIcon": "./assets/gpt-icon.webp",
+        "defaultPrompt": [
+          "Et demanaré moltes respostes mails. Jo soc voluntària per tant no soc cooperativista ni socia del sindicat parlar sempre en terc"
+        ],
+        "developerName": "GPT Creator",
+        "displayName": "Comunicacio Educació Mantera",
+        "logo": "./assets/gpt-icon.webp",
+        "longDescription": "Instructions for Comunicacio Educació Mantera.",
+        "shortDescription": "Instructions for Comunicacio Educació Mantera."
+      }
+    }
+  }
+}
