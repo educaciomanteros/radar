@@ -1,11 +1,12 @@
 # Top Manta · Radar d’oportunitats
 
-Festivals i finançament en un únic Site privat.
+Festivals, finançament, matriu i universitats en un projecte privat.
 
 - `/`: visió general i resum del seguiment local.
 - `/festivals/`: 16 festivals, fitxes editables, comparació i còpia del pla.
 - `/economia/`: 32 línies de finançament, comparació, seguiment i simulador.
 - `/matriu/`: candidatures, pressupostos de projectes, despeses, imputacions, cobraments, calendari i avisos.
+- `/universitats/`: programes, contactes, propostes de sessions i seguiment internacional.
 
 Es manté l’origen del Site econòmic i la seva clau de localStorage, per conservar-ne les notes en el mateix navegador. Per traslladar les notes del radar antic de festivals cal exportar-hi la còpia JSON i importar-la a la nova secció de festivals. El Site antic continua accessible. No hi ha sincronització entre dispositius.
 
@@ -19,7 +20,7 @@ Proves: `node tests/model.test.mjs` i `node --test tests/festivals.test.mjs`. Ta
 
 ## Publicació
 
-Projecte de Sites privat declarat a `.openai/hosting.json`. El repositori de Sites és la font de desplegament. La còpia de GitHub és per a revisió i continuïtat del codi; no activa publicacions automàtiques. Mantenir identitat i audiència. No incloure credencials ni anotacions personals.
+Projecte de Sites privat declarat a `.openai/hosting.json`. El repositori de Sites és la font de desplegament. El projecte complet es gestiona a l’arrel de GitHub; aquest repositori no activa publicacions automàtiques. El repositori de desplegament de Sites es manté separat i cal sincronitzar-lo abans de publicar canvis. Mantenir identitat i audiència. No incloure credencials ni anotacions personals.
 
 
 ## Matriu de subvencions

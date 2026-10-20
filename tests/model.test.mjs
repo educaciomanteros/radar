@@ -21,3 +21,4 @@ assert.throws(()=>validateBackup({version:1,weights,work:{fake:work.creixess}},d
 assert.throws(()=>validateBackup({version:1,weights,work:{creixess:{...work.creixess,notes:55}}},d.rows.map(r=>r.id)));
 const out=csv(d.rows,weights,work);assert.ok(out.startsWith('\ufeff'));assert.ok(out.includes("'=HYPERLINK"));assert.ok(out.includes('Dues línies\namb ""cometes""'));
 console.log('PASS: integritat de 32 fitxes, terminis i fus horari, priorització, exclusions, pressupost, còpies i exportació CSV.');
+
