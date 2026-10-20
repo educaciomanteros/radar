@@ -33,3 +33,11 @@ Cada despesa pot repartir-se entre ajuts. Els avisos detecten excés d’imputac
 Còpia completa JSON validada abans de substituir dades locals; quatre CSV (matriu, projectes, despeses, imputacions), en UTF-8 amb BOM, separador punt i coma i protecció de fórmules. La còpia de la matriu és independent de les còpies dels radars. Les dades es desen només en localStorage, sense servidor ni sincronització. El saldo calculat és cobraments registrats menys pagaments, no saldo bancari. Any de gestió, sense distribució automàtica per anualitats. Les beques personals no s’han de registrar com a ingressos de l’entitat.
 
 Verificació: `npm test` inclou 10 proves financeres i d’importació/exportació de la matriu i les proves dels radars. Comprovació de sintaxi, camps i rutes de navegació. Sense prova visual de navegador en aquesta sessió.
+
+## Radar universitari · 20/10/2026
+
+`/universitats/` afegeix 46 unitats acadèmiques de 45 institucions, distribuïdes entre Espanya, la resta d'Europa, Amèrica del Nord, Amèrica Llatina, Àfrica, Àsia i Oceania. És una primera base prioritzada, no un cens exhaustiu. UAL té dues unitats. Les fitxes distingeixen centres universitaris, escoles superiors i grups de recerca; no tots són titulacions. Cada fitxa inclou font acadèmica, porta suggerida de contacte, canal publicat o pendent, data de consulta i proposta editorial pròpia de sessió.
+
+La puntuació estima encaix temàtic i potencial de projecció (1–5); no deriva d'un rànquing ni acredita audiències, pressupostos o invitacions. La documentació de la EUCD inclou informació anterior i cal confirmar l'oferta vigent. Verificar responsable, programa, condicions i llengua abans de proposar dates. Els marges de planificació són recomanacions. No s'envien correus des del Site.
+
+Filtres per regió, tema, estat i canal; cerca; fitxa detallada; seguiment (responsable, contacte confirmat, últim contacte, següent pas, data interna, honoraris i viatge previstos); esborrany editable en català o anglès; exportació de la vista CSV; còpia JSON i importació amb còpia prèvia; alta manual de centres pendents de verificar. Clau exclusiva `top-manta-universitats-v1`. Les dades personals es desen només al navegador i no se sincronitzen ni s'imputen a la matriu de subvencions. Cap cost ni honorari s'ha assumit com a finançament confirmat.

@@ -1,9 +1,9 @@
 {
   "name": "top-manta-radar-oportunitats",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "private": true,
   "type": "module",
   "scripts": {
-    "test": "node tests/model.test.mjs && node --test tests/festivals.test.mjs tests/matrix.test.mjs"
+    "test": "node tests/model.test.mjs && node --test tests/festivals.test.mjs tests/matrix.test.mjs tests/universities.test.mjs"
   }
 }
