@@ -1,19 +1,16 @@
-# Top Manta · Radar d’ajuts
+# Top Manta · Radar d’oportunitats
 
-Radar privat en català amb 32 línies de subvencions, beques i finançament potencialment rellevants a Barcelona, Catalunya, Espanya i Europa. Revisió documental 19/10/2026. No és un cens exhaustiu ni una confirmació d’elegibilitat.
+Festivals i finançament en un únic Site privat.
 
-## Funcions
+- `/`: visió general i resum del seguiment local.
+- `/festivals/`: 16 festivals, fitxes editables, comparació i còpia del pla.
+- `/economia/`: 32 línies de finançament, comparació, seguiment i simulador.
 
-- Priorització ponderada (encaix, impacte, capacitat, càrrega), comparació de tres opcions i filtres.
-- Fitxes amb font oficial, incerteses, proposta de projecte, requisits, imports i següents accions.
-- Seguiment local (responsable, estat, notes, data interna, requisits revisats). No hi ha sincronització entre dispositius.
-- CSV amb BOM i protecció contra fórmules; còpia JSON del seguiment i importació validada.
-- Simulador de cofinançament i liquiditat amb dades manuals; quatre projectes de partida.
-- Només CreixESS i CCAM trasllat tenen termini obert verificat a la data de tall. L’elegibilitat de Top Manta continua condicionada.
+Es manté l’origen del Site econòmic i la seva clau de localStorage, per conservar-ne les notes en el mateix navegador. Per traslladar les notes del radar antic de festivals cal exportar-hi la còpia JSON i importar-la a la nova secció de festivals. El Site antic continua accessible. No hi ha sincronització entre dispositius.
 
-## Verificació
+El codi de dades i lògica dels dos radars es conserva; només s’adapten navegació i rutes dels recursos. Les dades no s’han revalidat amb aquesta unificació.
 
-Executar `node tests/model.test.mjs`. Verificats integritat de les fitxes, fus horari i venciment, exclusions, pesos, càlculs, exportació i validació de còpies. Comprovació sintàctica de JS i estructura HTML. No s’ha fet comprovació visual de navegador: el skill control-browser no està disponible en aquesta sessió.
+Proves: `node tests/model.test.mjs` i `node --test tests/festivals.test.mjs`. També es comproven rutes dels recursos i conservació de dades. Sense revisió visual de navegador en aquesta sessió.
 
 ## Fonts i actualització
 
@@ -22,3 +19,4 @@ Executar `node tests/model.test.mjs`. Verificats integritat de les fitxes, fus h
 ## Publicació
 
 Projecte de Sites privat declarat a `.openai/hosting.json`. El repositori de Sites és la font de desplegament. La còpia de GitHub és per a revisió i continuïtat del codi; no activa publicacions automàtiques. Mantenir identitat i audiència. No incloure credencials ni anotacions personals.
+

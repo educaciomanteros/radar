@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ca">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow"><meta name="theme-color" content="#f5f3ec">
+  <meta name="description" content="Planificador privat de festivals de Top Manta: prioritats, comparació i seguiment de propostes.">
+  <title>Top Manta — Radar de festivals</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%237544c8'/%3E%3Ctext x='32' y='43' text-anchor='middle' font-family='Arial' font-size='30' font-weight='bold' fill='%23e0f18c'%3ETM%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="./styles.css"><script type="module" src="./app.js"></script>
+<link rel="stylesheet" href="/unified.css"></head>
+<body>
+  <a class="skip" href="#prioritats">Ves al planificador</a>
+  <header class="topbar wrap">
+    <a class="wordmark" href="/" aria-label="Top Manta, inici">TOP MANTA<span>RADAR INTERNACIONAL</span></a>
+    <nav aria-label="Principal"><a href="#prioritats">Prioritzar</a><a href="#festivals">Festivals <span id="nav-count">16</span></a></nav>
+    <div class="private"><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><rect x="4.5" y="8.5" width="11" height="8" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M7 8V6a3 3 0 0 1 6 0v2" stroke="currentColor" stroke-width="1.5"/></svg>Espai privat</div>
+  </header><nav class="radar-switch wrap" aria-label="Radars de Top Manta"><a href="/">Visió general</a><a href="/festivals/" aria-current="page">Festivals</a><a href="/economia/">Finançament</a></nav><aside class="migration-note wrap"><details><summary>Trasllada les notes del radar antic de festivals</summary><p>Si ja hi havies fet canvis, obre el <a href="https://top-manta-radar-festivals-k7m4.stollenart.chatgpt.site" target="_blank" rel="noopener">radar original</a> en el mateix navegador. A «Còpia del pla», descarrega la còpia JSON. Torna aquí i importa-la des de «Còpia del pla → Importa còpia JSON». La importació substitueix el pla de festivals d’aquest Site. Les notes del radar econòmic es conserven al mateix navegador perquè aquest Site manté la seva adreça.</p></details></aside>
+  <main class="wrap">
+    <section class="hero" aria-labelledby="page-title">
+      <div class="hero-copy"><div class="eyebrow"><span class="dot"></span> FESTIVALS · 2026—2027</div><h1 id="page-title">Obrim camí.<br><span>Triem on ser.</span></h1><p>Un mapa d’oportunitats per portar la moda,<br class="desktop"> l’art i l’activisme de Top Manta més lluny.</p></div>
+      <div class="hero-art" aria-hidden="true"><div class="orbit orbit-a"></div><div class="orbit orbit-b"></div><div class="orbit orbit-c"></div><div class="art-label">DE BARCELONA<br>AL MÓN ↗</div><div class="art-star">✳</div><div class="art-year">26<br><span>27</span></div></div>
+      <div class="hero-stats"><div><strong id="total-count">16</strong><span>oportunitats al radar</span></div><div><strong id="progress-count">0</strong><span>propostes en marxa</span></div><div><strong id="verified-count">0</strong><span>fitxes verificades</span></div></div>
+    </section>
+
+    <section id="prioritats" class="decision-section" aria-labelledby="decision-title">
+      <div class="section-heading"><div><div class="eyebrow">01 / DECIDIR</div><h2 id="decision-title">Què pesa més per a tu?</h2></div><span class="live-label"><span class="dot"></span>Recomanació en directe</span></div>
+      <div class="decision-grid">
+        <aside class="weight-panel panel" aria-label="Pes dels criteris">
+          <div class="panel-heading"><h3>Les teves prioritats</h3><button id="reset-weights" class="text-button" title="Torna als pesos inicials">Restableix</button></div>
+          <p class="small muted">Mou els pesos i observa com canvia l’ordre.</p>
+          <div class="presets" aria-label="Escenaris"><button data-preset="balanced">Equilibri</button><button data-preset="impact">Impacte</button><button data-preset="practical">Viabilitat</button></div>
+          <div id="weight-controls"></div>
+          <div class="method"><span class="method-icon">∑</span><div><strong>Una decisió transparent</strong><p>Mitjana ponderada de les puntuacions (1–5), convertida a 100. Els pesos es normalitzen automàticament.</p><button class="text-button" id="save-reference">Fixa aquests pesos com a referència</button></div></div>
+        </aside>
+        <div class="results-column">
+          <div id="recommendation" aria-live="polite" aria-atomic="true"></div>
+          <div class="compare-heading"><h3>Costat a costat <span id="compare-count">3/3</span></h3><p>Tria fins a 3 festivals a la llista de sota.</p></div>
+          <div id="comparison" class="comparison"></div>
+          <div class="sample-note"><span aria-hidden="true">ⓘ</span><p><strong>Punt de partida, no veredicte.</strong> Les puntuacions inicials són de mostra. Revisa-les a cada fitxa; les dates de contacte i els contactes provenen de la teva base i encara s’han de verificar.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="festivals" class="festival-section" aria-labelledby="festival-title">
+      <div class="section-heading"><div><div class="eyebrow">02 / PASSAR A L’ACCIÓ</div><h2 id="festival-title">El teu radar de festivals</h2></div><button class="button primary" id="add-festival"><span aria-hidden="true">＋</span> Afegir festival</button></div>
+      <div class="table-panel panel">
+        <div class="table-toolbar"><div class="filters"><label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Cerca festival o país…" aria-label="Cerca festival o país"></label><select id="status-filter" aria-label="Filtra per estat"><option value="">Tots els estats</option></select></div><div class="export-actions"><button class="button subtle" id="export-csv">↓ CSV per a Excel</button><details class="backup-menu"><summary class="button subtle">Còpia del pla ⋯</summary><div><button id="export-json">Descarrega còpia JSON</button><button id="import-json">Importa còpia JSON</button></div></details><input type="file" id="import-file" accept=".json,application/json" hidden></div></div>
+        <div class="table-scroll"><table><thead><tr><th class="check-cell"><span class="sr-only">Compara</span></th><th scope="col">Festival / país</th><th scope="col" class="proposal-col">Què proposem?</th><th scope="col">Contactar <span title="Mes orientatiu de contacte, no data del festival">ⓘ</span></th><th scope="col">Estat</th><th scope="col" class="score-head">Punts /100</th><th scope="col"><span class="sr-only">Accions</span></th></tr></thead><tbody id="festival-rows"></tbody></table></div>
+        <div class="table-footer"><span id="result-count"></span><span>↕ Ordre segons els teus pesos · <span class="legend-dot"></span> puntuació de mostra</span></div>
+      </div>
+    </section>
+    <footer class="footer"><p>TOP MANTA <span>·</span> Cultura, drets i futurs compartits.</p><div><span id="save-status" role="status">Canvis desats en aquest navegador</span><p>Exporta una còpia per conservar-la o canviar de dispositiu.</p></div></footer>
+  </main>
+  <dialog id="festival-dialog" aria-labelledby="dialog-title"><form id="festival-form"><div class="dialog-header"><div><div class="eyebrow">FITXA DEL FESTIVAL</div><h2 id="dialog-title">Edita festival</h2></div><button type="button" id="close-dialog" class="icon-button" aria-label="Tanca la fitxa">×</button></div><div class="dialog-body"><input type="hidden" name="id"><div class="form-grid"><label>Festival<input name="name" required maxlength="150"></label><label>País o àmbit<input name="country" maxlength="150" required></label><label class="full">Què proposem?<input name="proposal" maxlength="500"></label><label class="full">Contacte<input name="contact" maxlength="300" placeholder="Correu o referència del contacte"></label><label>Mes previst de contacte<input name="month" type="month" min="2020-01" max="2100-12"></label><label>Nota del calendari<input name="timingNote" maxlength="150" placeholder="P. ex., octubre–novembre"></label><label>Prioritat inicial<select name="priority"><option>Alta</option><option>Mitjana</option><option>Baixa</option></select></label><label>Estat<select name="status"></select></label></div><div class="form-divider"><h3>Puntuacions segons el teu criteri</h3><p>1 = baix · 5 = alt. A «Cost assumible», 5 vol dir més assequible.</p></div><div id="score-controls" class="score-controls"></div><label class="checkbox-label"><input type="checkbox" name="reviewed"> He revisat aquestes puntuacions</label><div class="form-divider"><h3>Següent moviment</h3></div><div class="form-grid"><label class="full">Acció pendent<input name="nextAction" maxlength="500" placeholder="P. ex., preparar un dossier de dues pàgines"></label><label>Data límit interna<input name="dueDate" type="date" min="2020-01-01" max="2100-12-31"></label><label class="full">Notes<textarea name="notes" rows="3" maxlength="6000"></textarea></label></div><label class="checkbox-label"><input type="checkbox" name="verified"> He verificat el contacte i les condicions del calendari</label><label class="checkbox-label"><input type="checkbox" name="eligible"> Inclou aquest festival a la recomanació</label><p class="small muted">Aquesta fitxa serveix per planificar. Desar-la no envia cap proposta.</p></div><div class="dialog-footer"><button type="button" id="cancel-dialog" class="button subtle">Cancel·la</button><button type="submit" class="button primary">Desa els canvis</button></div></form></dialog>
+  <dialog id="import-dialog" aria-labelledby="import-title"><div class="dialog-header"><h2 id="import-title">Substituir el pla actual?</h2></div><div class="dialog-body"><p id="import-summary"></p><p>La còpia substituirà els festivals i els pesos d’aquest navegador. Pots descarregar el pla actual abans de continuar.</p><button id="backup-before-import" class="button subtle">↓ Desa una còpia del pla actual</button></div><div class="dialog-footer"><button id="cancel-import" class="button subtle">Cancel·la</button><button id="confirm-import" class="button primary">Importa i substitueix</button></div></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+</body>
+</html>

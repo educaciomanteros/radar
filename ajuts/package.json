@@ -1,9 +1,9 @@
 {
-  "name": "top-manta-radar-ajuts",
-  "version": "1.0.0",
+  "name": "top-manta-radar-oportunitats",
+  "version": "1.1.0",
   "private": true,
   "type": "module",
   "scripts": {
-    "test": "node tests/model.test.mjs"
+    "test": "node tests/model.test.mjs && node --test tests/festivals.test.mjs"
   }
 }
