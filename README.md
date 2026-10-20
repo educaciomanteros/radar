@@ -48,3 +48,7 @@ No hi ha publicació automàtica des de GitHub. El web privat existent continua 
 ## Verificació documental
 
 Les bases econòmica i universitària tenen les dates de consulta i les limitacions indicades a les seves fitxes. Les oportunitats, els contactes i els terminis necessiten revisió abans d’actuar. La base universitària és una selecció prioritzada internacional, no un cens exhaustiu. Les puntuacions i les propostes són valoracions editorials.
+
+## Accés Google sol·licitat
+
+Llista de dos comptes amb rol de consulta a `access/google-access.json`. **Pendent d’activació**: no és un mecanisme d’autenticació operatiu. Vegeu [requisits i estat real](docs/ACCES_GOOGLE.md). El web continua privat amb l’accés existent fins que Google estigui configurat i verificat.

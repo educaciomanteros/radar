@@ -1,0 +1,12 @@
+{
+  "provider": "google",
+  "role": "viewer",
+  "allowed_emails": [
+    "laracostafreda@gmail.com",
+    "educaciomanteros@gmail.com"
+  ],
+  "require_verified_email": true,
+  "default_access": "deny",
+  "status": "pending_activation",
+  "note": "Requested access policy only. This file is not an authentication service and is not enforced by the current static Sites deployment."
+}
